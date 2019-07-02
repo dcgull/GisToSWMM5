@@ -18,6 +18,15 @@ Other studies involving GisToSWMM5 include:
 - Rautiainen, M., 2016. Hulevesimallinnus ja tulvariskin arviointi Turun sataman valuma-alueella (Storm water modelling and flood risk assessment in Turku harbor catchment). Master’s Thesis. Aalto University, Espoo, Finland. 51 p. <http://urn.fi/URN:NBN:fi:aalto-201611025308> (In Finnish)  
 - Taka, M., Kokkonen, T., Kuoppamäki, K., Niemi, T., Sillanpää, N., Valtanen, M., Warsta, L., Setälä, H., 2017. Spatio-temporal patterns of major ions in urban stormwater under cold climate. Hydrol. Process. 31, 1564–1577. <https://doi.org/10.1002/hyp.11126>
 
+
+# Runtime Instructions
+
+docker build --tag=SWMMprep .
+
+docker run -v "$(pwd)"/demo_catchment:/app/demo_catchment SWMMprep
+
+TODO: Scripts for converting river netowrk to conduits/junctions, create flow direction, create land use
+
 ### Using GisToSWMM5
 
 GisToSWMM5 is used via the command prompt or using a batch file.  
